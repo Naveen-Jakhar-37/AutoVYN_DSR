@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="header">
+        <a href="index.html"><img src="images/image.png" class="logo1" alt=""></a>
+        <img src="images/Logo.png" class="logo2" alt="">
+
+        <div class="user-section">
+            <img src="images/Home.png" class="home-icon" alt="">
+            <div class="custom-select-wrapper">
+                <select>
+                    <option value="" disabled selected>John Smith</option>
+                </select>
+                <span><img src="images/person-fill.svg" alt="">▼</span>
+            </div>
+        </div>
+    </div>
+    <hr class="hr-line">
+
+    <div class="page-body">
+        <div class="dashboard">
+            <div class="breadcrumb">
+                <span class="current"> Area Dashboard</span>
+                <span class="separator"> &gt; </span>
+                <a href="">Operator</a>
+            </div>
+
+            <div class="selection-dropdowns-Wrapper">
+                <div class="dropdown-pair">
+                    <span>Site: </span>
+                    <select style="width: 100px;">
+                        <option disabled selected hidden>MSIL</option>
+                    </select>
+                </div>
+
+                <div class="dropdown-pair">
+                    <span>Location: </span>
+                    <select style="width: 210px;">
+                        <option disabled selected hidden>Gurgaon Vehicle Plant</option>
+                    </select>
+                </div>
+
+                <div class="dropdown-pair">
+                    <span>Plant: </span>
+                    <select style="width: 120px;">
+                        <option disabled selected hidden>PLT-GP1</option>
+                    </select>
+                </div>
+
+                <div class="dropdown-pair">
+                    <span>Shop: </span>
+                    <select style="width: 120;">
+                        <option disabled selected hidden>AS1</option>
+                    </select>
+                </div>
+
+                <div class="button">
+                    <button>More</button>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="navbar">
+            <div class="h2">
+                <h2>SKILLSENSE</h2>
+            </div>
+
+            <div class="nav-tabs">
+                <a href="index.html" class="nav-tab active">AREA DASHBOARD</a>
+                <a href="index.html" class="nav-tab">DEPLOYMENT</a>
+                <a href="index.html" class="nav-tab">ON THE JOB TRAINING</a>
+                <a href="index.html" class="nav-tab">SKILL MATRIX</a>
+                <a href="index.html" class="nav-tab">REPORTS</a>
+            </div>
+        </div>
+
+        <div class="page-content">
+            <div class="view">
+                <div class="button-container" style="margin-top: 8px; flex-wrap: wrap;">
+                    <div>
+                        <label class="views">View:</label>
+                    </div>
+                    <!-- <span><img src="images/person-fill.svg" alt=""></span> -->
+                    <button class="btn left active">
+                        <div style="padding-right:5px; padding-top: 4px;"><img src="images/person-fill.svg" alt="">
+                        </div> Operators
+                    </button>
+                    <button class="btn right">
+                        <div style="padding-right:5px; padding-top: 4px;"><img src="images/fi-sr-line-width.svg" alt="">
+                        </div> Stations
+                    </button>
+                </div>
+
+                <div class="search">
+                    <div class="status-toggle" onclick="toggleStatus(this)">
+                        <span class="status-label left active">Active (27)</span>
+                        <div class="switch">
+                            <div class="knob"></div>
+                        </div>
+                        <span class="status-label right">Inactive (05)</span>
+                    </div>
+                    <div class="search-box">
+                        <input type="text" placeholder="Search by Name, Staff ID">
+                        <span>
+                            <img src="images/search.svg" alt="">
+                        </span>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <div class="container">
+                <div class="employee-list">
+                    <button class="buttons" style="border-top-left-radius: 10px; border-top-right-radius: 10px;">
+                        <div class="info">
+                            <img src="images/1.png" alt="" style="border: 3px solid #D83B01;">
+                            <div class="text">
+                                <div class="name">Ujjwal Sharma</div>
+                                <div class="id">660638 | A0</div>
+                            </div>
+                        </div>
+                    </button>
+
+                    <button class="buttons active">
+                        <div class="info">
+                            <img src="images/2.png" alt="" style="border: 3px solid #D83B01;">
+                            <div class="text">
+                                <div class="name">RAJ Kumar</div>
+                                <div class="id">660669 | TW</div>
+                            </div>
+                        </div>
+                    </button>
+
+                    <button class="buttons">
+                        <div class="info">
+                            <img src="images/Frame 25061.png" alt="">
+                            <div class="text">
+                                <div class="name">Bomban Kumar Panday</div>
+                                <div class="id">660677 | A0</div>
+                            </div>
+                        </div>
+                    </button>
+
+                    <button class="buttons">
+                        <div class="info">
+                            <img src="images/Frame 25061 (1).png" alt="">
+                            <div class="text">
+                                <div class="name">Shubham Sagar</div>
+                                <div class="id">660684 | A0</div>
+                            </div>
+                        </div>
+                    </button>
+
+                    <button class="buttons">
+                        <div class="info">
+                            <img src="images/3.png" alt="" style="border: 3px solid #58A55C;">
+                            <div class="text">
+                                <div class="name">Mohd Arzuddin</div>
+                                <div class="id">660704 | TW</div>
+                            </div>
+                        </div>
+                    </button>
+
+                    <button class="buttons">
+                        <div class="info">
+                            <img src="images/4.png" alt="" style="border: 3px solid #58A55C;">
+                            <div class="text">
+                                <div class="name">Kuldeep Oraon</div>
+                                <div class="id">660705 | A0</div>
+                            </div>
+                        </div>
+                    </button>
+
+                    <button class="buttons" style="border-bottom-left-radius: 10px; border-bottom-right-radius: 10px;">
+                        <div class="info">
+                            <img src="images/5.png" alt="" style="border: 3px solid #58A55C;">
+                            <div class="text">
+                                <div class="name">Ankit</div>
+                                <div class="id">660709 | A0</div>
+                            </div>
+                        </div>
+                    </button>
+
+                </div>
+
+                <div class="employee-detail">
+                    <div class="details">
+                        <div class="person">
+                            <img src="images/2.png" alt="">
+                            <div class="detail-text">
+
+                                <div class="detail-name">Raj Kumar</div>
+                                <div class="detail-id">660669 | TW</div>
+                                <div class="dob">Date of Birth: 12/11/2000</div>
+                            </div>
+                        </div>
+
+                        <div class="joining-detail">
+                            <div class="joining-date">Joining Date: <b>10/04/2023</b></div>
+                            <div class="reliveing-date">Reliveing Date: <b>20/12/2023</b></div>
+                            <div class="reliveing-in">Reliveing In: <b style="color: red;">30 Days</b></div>
+                        </div>
+
+                        <div class="x">
+                            x
+                        </div>
+
+
+                    </div>
+
+                    <div class="tabs">
+                        <a href="index.html" class="nav-tab-2 active"
+                            style="padding: 0px 20px 0px 20px; font-size: 15px; font-weight: bold;">DEPLOYMENT</a>
+                        <a href="index.html" class="nav-tab-2"
+                            style="padding: 0px 20px 0px 20px; font-size: 15px;">ATTANDANCE</a>
+                        <a href="index.html" class="nav-tab-2"
+                            style="padding: 0px 20px 0px 20px; font-size: 15px;">SKILL</a>
+                        <a href="index.html" class="nav-tab-2"
+                            style="padding: 0px 20px 0px 20px; font-size: 15px;">CLASSROOM TRAINING</a>
+                    </div>
+
+                    <div class="selection-dropdowns-Wrapper-2">
+                        <div class="dropdown-pair-2">
+                            <label for="from-date"><span>From:</span></label>
+                            <input type="date" id="from-date" name="from-date">
+                        </div>
+
+                        <div class="dropdown-pair-2">
+                            <label for="to-date"><span>To:</span></label>
+                            <input type="date" id="to-date" name="to-date">
+                        </div>
+
+                        <div class="dropdown-pair-2">
+                            <span>Section: </span>
+                            <select>
+                                <option disabled selected>ALL</option>
+                            </select>
+                        </div>
+
+                        <div class="dropdown-pair-2">
+                            <span>Shift: </span>
+                            <select>
+                                <option disabled selected>ALL</option>
+                            </select>
+                        </div>
+
+                    </div>
+
+                    <div class="details-of-stations">
+
+                        <div class="table-wrapper">
+
+                            <table class="table-details" style=" padding-top: 50px; padding-right: 10px;">
+                                <thead>
+
+                                    <tr>
+                                        <th></th>
+                                        <th></th>
+                                        <th>Actual Deployed Station</th>
+                                        <th>Plannaed Station </th>
+                                        <th>shift</th>
+                                        <th>4M-Man</th>
+                                    </tr>
+
+                                </thead>
+
+                                <tbody>
+                                    <tr>
+                                        <td> 
+                                            <div>
+                                                <strong> Today </strong>
+                                            </div>
+                                            <div>
+                                                (11 DEC 2023 - Present)
+                                            </div>
+                                        </td>
+                                        <td class="timeline-icon first">
+                                            <div class="icon-wrapper">
+                                                <img src="images/Vector.svg" style="height: 15px; width: 15px;">
+                                            </div>
+                                        </td>
+                                        <td>7RA | Break Pipe Fitment</td>
+                                        <td style="color: 686869 ;">Same as deployed</td>
+                                        <td> A </td>
+                                        <td><img src="images/Frame 25066.svg" style="height: 30px; text-align: center; justify-content: center;"></td>
+
+                                    </tr>
+
+                                    <tr>
+                                        <td>10 Dec 2023 - 10 Dec 2023 </td>
+                                        <td class="timeline-icon">
+                                            <div class="icon-wrapper">
+                                                <img src="images/Vector (1).svg" style="height: 15px; width: 15px;">
+                                            </div>
+                                        </td>
+                                        <td> 7RB | TMC Fitment </td>
+                                        <td> 7RA | Break Pipe Fitment</td>
+                                        <td> A </td>
+                                        <td><img src="images/Frame 25066.svg" style="height: 30px; text-align: center; justify-content: center;"></td>
+
+
+                                    </tr>
+
+                                    <tr>
+
+                                        <td>05 Dec 2023 - 09 Dec 2023 </td>
+                                        <td class="timeline-icon">
+                                            <div class="icon-wrapper">
+                                                <img src="images/Vector (1).svg" style="height: 15px; width: 15px;">
+                                            </div>
+                                        </td>
+                                        <td>7RA | Break Pipe Fitment </td>
+                                        <td>Same as Deployed </td>
+                                        <td> A </td>
+                                        <td><img src="images/Frame 25066.svg" style="height: 30px; text-align: center; justify-content: center;"></td>
+
+
+                                    </tr>
+
+                                    <tr>
+                                        <td>20 Nov 2023 - 04 Dec 2023</td>
+                                        <td class="timeline-icon">
+                                            <div class="icon-wrapper">
+                                                <img src="images/Vector (1).svg" style="height: 15px; width: 15px;">
+                                            </div>
+                                        </td>
+                                        <td>8RB | Eeco Flair Nut Torque</td>
+                                        <td> Same as Deployed </td>
+                                        <td>A </td>
+                                        <td><img src="images/Frame 25066.svg" style="height: 30px; text-align: center; justify-content: center;"></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>01 Sep 2023 - 19 Nov 2023 </td>
+                                        <td class="timeline-icon last">
+                                            <div class="icon-wrapper">
+                                                <img src="images/Vector (1).svg" style="height: 15px; width: 15px;">
+                                            </div>
+                                        </td>
+                                        <td>7RA | Break Pipe Fitment </td>
+                                        <td>Same as Deployed </td>
+                                        <td> A </td>
+                                        <td><img src="images/Frame 25066.svg" style="height: 30px; text-align: center; justify-content: center;"></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+
+
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
