@@ -768,6 +768,10 @@
     -webkit-overflow-scrolling: touch;
 }
 
+.attandance-detail {
+    border-collapse: collapse;
+}
+
 .attandance-detail thead th {
     text-align: left;
     /* padding-right: 120px; */
@@ -787,7 +791,6 @@
     padding-left: 10px;
     padding-top: 10px;
     white-space: nowrap;
-    color: gray;
     font-size: 18px;
     border-bottom: 2px solid #f4f5f8;
 }
