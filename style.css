@@ -242,8 +242,8 @@
     padding: 7px 30px 7px 30px;
     border: none;
 
-    
-   
+
+
 }
 
 .btn.left {
@@ -437,7 +437,7 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    flex: 1 1 250px; 
+    flex: 1 1 250px;
     min-width: 200px;
 }
 
@@ -453,44 +453,44 @@
 .detail-text {
     display: flex;
     flex-direction: column;
-  gap: 4px;
+    gap: 4px;
 }
 
 
 .detail-name {
-     margin: 0;
-  font-size: 1.5rem;
-  font-weight: bold;
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: bold;
 }
 
 .detail-id,
 .dob {
-  margin: 0;
-  font-size: 0.9rem;
-  color: #555;
+    margin: 0;
+    font-size: 0.9rem;
+    color: #555;
 }
 
 .joining-detail {
-     padding-top: 30px;
-     display: flex;
-  flex-direction: column;
-  flex: 1 1 200px;
-  min-width: 180px;
-  gap: 8px;
-  text-align: left;
-    
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 200px;
+    min-width: 180px;
+    gap: 8px;
+    text-align: left;
+
 }
 
-.joining-detail > div {
-  margin: 0;
-  font-size: 0.9rem;
+.joining-detail>div {
+    margin: 0;
+    font-size: 0.9rem;
 }
 
 .x {
-  flex: 0 0 auto;
-  font-size: 1.2rem;
-  cursor: pointer;
-  margin-left: auto;
+    flex: 0 0 auto;
+    font-size: 1.2rem;
+    cursor: pointer;
+    margin-left: auto;
 }
 
 .tabs {
@@ -498,8 +498,8 @@
     background-color: #e8e8f4;
     display: flex;
     justify-content: flex-start;
-  flex-wrap: wrap;
-  gap: 10px;    
+    flex-wrap: wrap;
+    gap: 10px;
 }
 
 .nav-tab-2 {
@@ -537,7 +537,7 @@
 .dropdown-pair-2 {
     position: relative;
     flex: 1 1 200px;
-  min-width: 150px;
+    min-width: 150px;
 
 }
 
@@ -556,7 +556,7 @@
     border-radius: 5px;
     padding: 5px 10px 5px 40px;
     width: 100%;
-     box-sizing: border-box;
+    box-sizing: border-box;
     font-size: 12px;
     text-align: left;
     z-index: 0;
@@ -576,116 +576,239 @@
     text-align: left;
 }
 
+
+.selection-dropdowns-Wrapper-3 {
+    margin: 10px 10px 10px 30px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+
+.dropdown-pair-3 {
+    position: relative;
+    /* flex: 1 1 200px;
+  min-width: 150px; */
+    width: 250px;
+
+}
+
+.dropdown-pair-3 span {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+    font-size: 12px;
+    color: #555;
+    z-index: 1;
+    width: auto;
+    white-space: nowrap;
+}
+
+.dropdown-pair-3 input {
+    border-radius: 5px;
+    padding: 5px 10px 5px 40px;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 12px;
+    text-align: left;
+    z-index: 0;
+}
+
+.dropdown-pair-3 select {
+    border-radius: 5px;
+    padding: 5px 10px 5px 80px;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 12px;
+    text-align: left;
+    z-index: 0;
+}
+
+.dropdown-pair-3 select option {
+    text-align: left;
+}
+
 .table-wrapper {
-  width: 100%;
-  overflow-x: auto;
-  -webkit-overflow-scrolling: touch;
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
 }
 
 .timeline-icon {
-  position: relative;
-  width: 30px;
-  padding: 0;
+    position: relative;
+    width: 30px;
+    padding: 0;
 }
 
 .icon-wrapper {
-  position: relative;
-  z-index: 2;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-  padding: 10px 0;
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 10px 0;
 }
 
 .timeline-icon::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 50%;
-  width: 1px;
-  background-color: gray;
-  z-index: 1;
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 1px;
+    background-color: gray;
+    z-index: 1;
 }
 
 .timeline-icon.first::before {
-  top: 50%; 
+    top: 50%;
 }
 
 .timeline-icon.last::before {
-  bottom: 50%; 
+    bottom: 50%;
 }
 
 .table-details {
-  width: 100%;
-  min-width: 700px;
-  border-collapse: collapse;
-  font-size: 14px;
+    width: 100%;
+    min-width: 700px;
+    border-collapse: collapse;
+    font-size: 14px;
 }
 
 .table-details thead th {
-  text-align: center;
-  padding: 16px;
-  white-space: nowrap;
+    text-align: center;
+    padding: 16px;
+    white-space: nowrap;
 }
 
 .table-details tbody td {
-  text-align: center;
-  border-bottom: 10px solid white;
-  white-space: nowrap;
+    text-align: center;
+    border-bottom: 10px solid white;
+    white-space: nowrap;
 }
 
 .table-details tbody tr td:nth-child(3),
 .table-details tbody tr td:nth-child(4),
 .table-details tbody tr td:nth-child(5),
 .table-details tbody tr td:nth-child(6) {
-  background-color: #f4f5f8;
+    background-color: #f4f5f8;
 }
 
 .table-details tbody tr:first-child td:nth-child(3),
 .table-details tbody tr:first-child td:nth-child(4),
 .table-details tbody tr:first-child td:nth-child(5),
 .table-details tbody tr:first-child td:nth-child(6) {
-  background-color: #cccdcd;
+    background-color: #cccdcd;
 }
 
 .table-details tbody tr td:nth-child(2) {
-  border-bottom: none;
+    border-bottom: none;
 }
 
 .table-details tbody tr:first-child td:nth-child(n+3):nth-child(-n+6) {
-  border-bottom: 40px solid white;
+    border-bottom: 40px solid white;
 }
 
 
 .table-details tr:first-child td:nth-child(3) {
-  border-top-left-radius: 10px;
-  border-bottom-left-radius: 20px;
-  padding-bottom: 20px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 20px;
+    padding-bottom: 20px;
 }
 
 .table-details tbody tr:first-child td:nth-child(6) {
-  border-top-right-radius: 10px;
-  border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.working {
+    margin: 10px 30px 10px 30px;
+    background-color: #f4f5f8;
+    border-radius: 10px;
+}
+
+.table-wrapper-2 {
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+.working-detail thead th {
+    text-align: left;
+    padding-right: 100px;
+    padding-left: 10px;
+    padding-top: 10px;
+    /* white-space: nowrap; */
+    color: gray;
+    font-size: 18px;
+}
+
+.working-detail tbody td {
+    text-align: left;
+    padding-right: 100px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    /* white-space: nowrap; */
+    /* color: gray; */
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.attandance {
+    margin: 10px 30px 10px 30px;
+    border: 2px solid #f4f5f8;
+    border-bottom: none;
+    border-radius: 10px;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+.attandance-detail thead th {
+    text-align: left;
+    /* padding-right: 120px; */
+    width: 300px;
+    padding-left: 10px;
+    padding-top: 10px;
+    white-space: nowrap;
+    color: gray;
+    font-size: 18px;
+    border-bottom: 2px solid #f4f5f8;
+}
+
+.attandance-detail tbody td {
+    text-align: left;
+    /* padding-right: 120px; */
+    width: 300px;
+    padding-left: 10px;
+    padding-top: 10px;
+    white-space: nowrap;
+    color: gray;
+    font-size: 18px;
+    border-bottom: 2px solid #f4f5f8;
 }
 
 @media (max-width: 480px) {
-  .table-details {
-    font-size: 12px;
-    min-width: 600px;
-  }
+    .table-details {
+        font-size: 12px;
+        min-width: 600px;
+    }
 }
 
 
 @media (max-width: 600px) {
-  .selection-dropdowns-Wrapper-2 {
-    gap: 10px;
-  }
-  .dropdown-pair-2 {
-    flex: 1 1 100%;   
-    min-width: 0;
-  }
+    .selection-dropdowns-Wrapper-2 {
+        gap: 10px;
+    }
+
+    .dropdown-pair-2 {
+        flex: 1 1 100%;
+        min-width: 0;
+    }
 }
 
 @media (max-width: 768px) {
@@ -693,6 +816,7 @@
         flex-direction: column;
         gap: 15px;
     }
+
     .header {
         flex-direction: column;
         align-items: flex-start;
@@ -712,22 +836,28 @@
 }
 
 @media (max-width: 480px) {
-  .details, .tabs {
-    padding: 10px;
-  }
-  .person, .joining-detail {
-    flex: 1 1 100%;  
-    text-align: center;
-  }
-  .joining-detail {
-    align-items: center;
-  }
-  .x {
-    margin: 0 auto; 
-  }
-  .tabs .nav-tab {
-    flex: 1 1 45%; 
-    font-size: 0.85rem;
-  }
-}
 
+    .details,
+    .tabs {
+        padding: 10px;
+    }
+
+    .person,
+    .joining-detail {
+        flex: 1 1 100%;
+        text-align: center;
+    }
+
+    .joining-detail {
+        align-items: center;
+    }
+
+    .x {
+        margin: 0 auto;
+    }
+
+    .tabs .nav-tab {
+        flex: 1 1 45%;
+        font-size: 0.85rem;
+    }
+}
