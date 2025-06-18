@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <script>
+        window.onload = () => {
+            fetch("index.html")
+                .then(res => res.text())
+                .then(html => {
+                    const temp = document.createElement("div");
+                    temp.innerHTML = html;
+
+                    temp.querySelector('#tabs').innerHTML = `
+                        <a href="index.html" class="nav-tab-2"
+                            style="padding: 0px 20px 0px 20px; font-size: 15px; font-weight: bold;">DEPLOYMENT</a>
+                        <a href="attandance.html" class="nav-tab-2"
+                            style="padding: 0px 20px 0px 20px; font-size: 15px;">ATTANDANCE</a>
+                        <a href="skill.html" class="nav-tab-2 "
+                            style="padding: 0px 20px 0px 20px; font-size: 15px;">SKILL</a>
+                        <a href="training.html" class="nav-tab-2 active"
+                            style="padding: 0px 20px 0px 20px; font-size: 15px;">CLASSROOM TRAINING</a>
+                    `;
+
+                    temp.querySelector("#dropdown").innerHTML = `
+                        <div class="dropdown-pair-2">
+                            <span>Training Type: </span>
+                            <select>
+                                <option disabled selected>Refresher</option>
+                            </select>
+                        </div>
+
+                        <div class="dropdown-pair-2">
+                            <span>Topic: </span>
+                            <select>
+                                <option disabled selected>ALL</option>
+                            </select>
+                        </div>
+                    
+                        <div class="dropdown-pair-2">
+                            <label for="from-date"><span>From:</span></label>
+                            <input type="date" id="from-date" name="from-date">
+                        </div>
+
+                        <div class="dropdown-pair-2">
+                            <label for="to-date"><span>To:</span></label>
+                            <input type="date" id="to-date" name="to-date">
+                        </div>
+
+                        
+                    `;
+
+                    temp.querySelector("#working").innerHTML = `
+
+                    <div class="training">
+                        <table class="training-detail">
+                            <thead>
+                                <tr>
+                                    <th>Training Type <img src="images/Frame 24830.png" alt=""></th>
+                                    <th>Training Topic <img src="images/Frame 24830.png" alt=""></th>
+                                    <th>Training Test Name <img src="images/Frame 24830.png" alt=""></th>
+                                    <th>Pre-Test <img src="images/Frame 24830.png" alt=""></th>
+                                    <th>Post-Test <img src="images/Frame 24830.png" alt=""></th>
+                                    <th>Training Date & Time <img src="images/Frame 24830.png" alt=""></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Refresher</td>
+                                    <td>ISO 45001 Safety Training</td>
+                                    <td>ISO 45001 Safety Training</td>
+                                    <td><button style="cursor: pointer; height: 24px; width: 67px; background-color: #DFF6DD; border: none; border-radius: 10px; color: #58A55C; align-items: center;">Pass <img style="height: 11px; width: 11px;" src="images/New Window.svg" alt=""></buttton></td>
+                                    <td><button style="cursor: pointer; height: 24px; width: 67px; background-color: #DFF6DD; border: none; border-radius: 10px; color: #58A55C; align-items: center;">Pass <img style="height: 11px; width: 11px;" src="images/New Window.svg" alt=""></buttton></td>
+                                    <td>12/05/2023, 14:23:52</td>
+                                </tr>
+                                <tr>
+                                    <td>Refresher</td>
+                                    <td>Punch Operator Training</td>
+                                    <td>Punch Operator Training</td>
+                                    <td><button style="cursor: pointer; height: 24px; width: 67px; background-color: #FED9CC; border: none; border-radius: 10px; color: #D83B01; align-items: center;">Pass <img style="height: 11px; width: 11px;" src="images/New Window (1).svg" alt=""></buttton></td>
+                                    <td><button style="cursor: pointer; height: 24px; width: 92px; background-color: #DFF6DD; border: none; border-radius: 10px; color: #58A55C; align-items: center;">Pass 2 <img style="height: 11px; width: 11px;" src="images/New Window.svg" alt=""></buttton></td>
+                                    <td>12/05/2023, 14:23:52</td>
+                                </tr>
+                                <tr>
+                                    <td>Refresher</td>
+                                    <td>5 'S' Training</td>
+                                    <td>5 'S' Training</td>
+                                    <td><button style="cursor: pointer; height: 24px; width: 67px; background-color: #DFF6DD; border: none; border-radius: 10px; color: #58A55C; align-items: center;">Pass <img style="height: 11px; width: 11px;" src="images/New Window.svg" alt=""></buttton></td>
+                                    <td><button style="cursor: pointer; height: 24px; width: 67px; background-color: #DFF6DD; border: none; border-radius: 10px; color: #58A55C; align-items: center;">Pass <img style="height: 11px; width: 11px;" src="images/New Window.svg" alt=""></buttton></td>
+                                    <td>12/05/2023, 14:23:52</td>
+                                </tr>
+                                <tr>
+                                    <td>Refresher</td>
+                                    <td>ISO 9001 Quality Awareness Training</td>
+                                    <td>ISO 9001 Quality Awareness Training</td>
+                                    <td><button style="cursor: pointer; height: 24px; width: 67px; background-color: #DFF6DD; border: none; border-radius: 10px; color: #58A55C; align-items: center;">Pass <img style="height: 11px; width: 11px;" src="images/New Window.svg" alt=""></buttton></td>
+                                    <td><button style="cursor: pointer; height: 24px; width: 67px; background-color: #DFF6DD; border: none; border-radius: 10px; color: #58A55C; align-items: center;">Pass <img style="height: 11px; width: 11px;" src="images/New Window.svg" alt=""></buttton></td>
+                                    <td>12/05/2023, 14:23:52</td>
+                                </tr>
+                                <tr>
+                                    <td>Refresher</td>
+                                    <td>Driver Training</td>
+                                    <td>Driver Training</td>
+                                    <td><button style="cursor: pointer; height: 24px; width: 67px; background-color: #DFF6DD; border: none; border-radius: 10px; color: #58A55C; align-items: center;">Pass <img style="height: 11px; width: 11px;" src="images/New Window.svg" alt=""></buttton></td>
+                                    <td><button style="cursor: pointer; height: 24px; width: 67px; background-color: #DFF6DD; border: none; border-radius: 10px; color: #58A55C; align-items: center;">Pass <img style="height: 11px; width: 11px;" src="images/New Window.svg" alt=""></buttton></td>
+                                    <td>12/05/2023, 14:23:52</td>
+                                </tr>
+                                <tr>
+                                    <td>Refresher</td>
+                                    <td>Inspector Training</td>
+                                    <td>Inspector Training</td>
+                                    <td><button style="cursor: pointer; height: 24px; width: 67px; background-color: #DFF6DD; border: none; border-radius: 10px; color: #58A55C; align-items: center;">Pass <img style="height: 11px; width: 11px;" src="images/New Window.svg" alt=""></buttton></td>
+                                    <td><button style="cursor: pointer; height: 24px; width: 67px; background-color: #DFF6DD; border: none; border-radius: 10px; color: #58A55C; align-items: center;">Pass <img style="height: 11px; width: 11px;" src="images/New Window.svg" alt=""></buttton></td>
+                                    <td>12/05/2023, 14:23:52</td>
+                                </tr>
+                                <tr>
+                                    <td>Refresher</td>
+                                    <td>Repairman Training</td>
+                                    <td>Repairman Training</td>
+                                    <td><button style="cursor: pointer; height: 24px; width: 67px; background-color: #DFF6DD; border: none; border-radius: 10px; color: #58A55C; align-items: center;">Pass <img style="height: 11px; width: 11px;" src="images/New Window.svg" alt=""></buttton></td>
+                                    <td><button style="cursor: pointer; height: 24px; width: 67px; background-color: #DFF6DD; border: none; border-radius: 10px; color: #58A55C; align-items: center;">Pass <img style="height: 11px; width: 11px;" src="images/New Window.svg" alt=""></buttton></td>
+                                    <td>12/05/2023, 14:23:52</td>
+                                </tr>
+                                <tr>
+                                    <td>Refresher</td>
+                                    <td>Repairman Training</td>
+                                    <td>Repairman Training</td>
+                                    <td><button style="cursor: pointer; height: 24px; width: 67px; background-color: #DFF6DD; border: none; border-radius: 10px; color: #58A55C; align-items: center;">Pass <img style="height: 11px; width: 11px;" src="images/New Window.svg" alt=""></buttton></td>
+                                    <td><button style="cursor: pointer; height: 24px; width: 67px; background-color: #DFF6DD; border: none; border-radius: 10px; color: #58A55C; align-items: center;">Pass <img style="height: 11px; width: 11px;" src="images/New Window.svg" alt=""></buttton></td>
+                                    <td>12/05/2023, 14:23:52</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    
+                    `;
+
+                    document.body.innerHTML = temp.innerHTML;
+                });
+        };
+    </script>
+</head>
+
+<body>
+    <div>
+
+    </div>
+
+</body>
+
+</html>
